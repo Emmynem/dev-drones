@@ -1,3 +1,74 @@
+
+<!-- My own README.md -->
+## Drones
+
+Application by Nwoye Emmanuel - [Github](https://github.com/Emmynem)
+
+---
+
+### Requirements
+
+The following are required to successfully run this project on your system:
+- Download Node JS application
+- Download MySQL
+
+#### Creating our Sample Database
+I installed and configured the MySQL database. So, I have a username and password to log in to the MySQL database on the local machine. 
+
+`P.S: You can change the configuration in the env file for your own login details.`
+
+- Run the following command in the command prompt and replace the USERNAME with your database username.
+
+```
+mysql -u USERNAME -p
+```
+- After running the above command, MySQL asks for the password. So, enter the password and press the Enter key.
+- Create a new database named `dev_drones` and check whether the database was created or not.
+```
+mysql> CREATE DATABASE dev_drones;
+mysql> SHOW DATABASES;
+
++--------------------+
+| Database           |
++--------------------+
+| dev_drones         |
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+5 rows in set (0.00 sec)
+```
+
+### Installation
+
+Using MySQL as my DB of choice, you'll have to download the package and install [here.](https://dev.mysql.com/downloads/installer/)
+
+In the root directory run the following code in your command line
+
+### Installation
+
+```
+npm install
+```
+
+### Development
+```
+npm run dev
+```
+
+### Production
+```
+npm run prod
+```
+
+### Tests
+```
+npm test
+```
+
+### End of my README.md
+
 ## Drones
 
 [[_TOC_]]
